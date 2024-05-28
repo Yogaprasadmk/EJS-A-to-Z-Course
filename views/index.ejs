@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <head>
+</head>
+<body>
+
+    <!-- variable -->
+    <%= name %>
+
+    <!-- Uppercase -->
+    <%= name.toUpperCase() %>
+
+    <!-- if condition -->
+    <% if(age === 18){ %>
+     <h1><% {age} %></h1>
+    <% } %>
+
+    <!-- Else if Condition-->
+    <% if(age === 20) { %>
+    <h1> User age: <% age %></h1>
+    <% } else if (age === 30) { %>
+    <h1> User age : <% age %></h1>
+    <% } else {%>
+    <h1>Nothing.....</h1>
+    <% } %> 
+
+    <!-- For Loop Statements -->
+    <% for (let i = 0; i < 11; i++) { %>
+        
+        <h1><%= i %></h1>
+    <% } %>
+
+    <!--  -->
+
+<!-- Array  -->
+
+    <% const data = [1,2,3,4,5] %>
+    <% for(d in data) { %>
+    <h1> <%= d %> </h1>
+    <% } %>
+
+<!-- Date -->
+
+    <% const va = Date(); %>
+    <%= va %>
+    
+</body>
+</html>
